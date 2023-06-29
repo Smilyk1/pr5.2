@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #7e7a7a;
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        margin: 14px;
+        width: 196px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        background-color: #948c88;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button>І. Репін</button>
+    <button>Олександр Олесь</button>
+    <button>Л. Толстой</button>
+    <button>А. Міцкевич</button>
+    <button>О. Довженко</button>
+    <script>
+      const quotes = [
+        "Відчуваю й усвідомлюю, яка це красива й легка українська мова.",
+        "Для всіх ти мертва і смішна, Для всіх ти бідна і нещасна, Моя Україно пре-красна, Пісень і волі сторона.",
+        "Л. Толстой Слово є вчинок.",
+        "Народна пісня-духовне обличчя нації",
+        "Українська пісня — це бездонна душа українського народу, це його слава.",
+      ];
+      document.querySelectorAll("button").forEach((el, i) => {
+        el.onclick = () => alert(quotes[i]);
+      });
+    </script>
+  </body>
+</html>
